@@ -26,3 +26,8 @@ How do the diagrams help you visualize the branch structure?
     It is much easier to visualize the commits as a graph than to manually review
     the logs of various branches and try to find common points.
     
+What is the result of merging two branches together? Why do we represent it in the 
+diagram the way we do?
+    a single merged branch with the commits merged. to indicate that they evolved 
+    separately and have different parents than shown in log.
+    

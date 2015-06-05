@@ -9,4 +9,8 @@ What value do you think it offers?
     the value added by staging area is to stage the commit prior to committing
     to repo to avoid creating unnecessary commits or forgeting to add what you 
     changed later.
+
+How can you use the staging area to make sure you have one commit per logical change?
+    Do git diff --staged and review the changes compared to the latest code in
+    the repository and ensure that the changes constitute a single logical change.
     

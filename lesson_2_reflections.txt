@@ -13,4 +13,14 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical change?
     Do git diff --staged and review the changes compared to the latest code in
     the repository and ensure that the changes constitute a single logical change.
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+    If you are developing an experimental feautre it is helpful to have branches
+    to compartmentalize the history related to that feature. branches help
+    developers make changes independently without having to coordinate with each
+    other and merge at a later point. This is useful when modifying the same
+    set of files.
+
+
     

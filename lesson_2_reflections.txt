@@ -31,3 +31,8 @@ diagram the way we do?
     a single merged branch with the commits merged. to indicate that they evolved 
     separately and have different parents than shown in log.
     
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+    automatic merging saves time and manual merging will be time-consuming, but 
+    correct. most of the time if changes are independent then automatic is useful.
+    manual merges can sometimes result in errors.
+    

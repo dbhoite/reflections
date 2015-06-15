@@ -1,0 +1,98 @@
+#Install and configure Git
+git --version
+
+# clone a remote repository
+git clone https://github.com/udacity/asteroids.git
+
+# create new repository from scratch
+git init
+
+# Git configuration
+git config --global color.ui auto
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global credential.helper wincred
+git config --global user.name "dbhoite"
+git config --global user.email writetodeva@gmail.com
+git commit --amend --reset-author
+
+# in bashrc
+alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+
+# view commit history
+git log
+
+# view commit history as a simple graph
+git log --graph -oneline master my-branch
+
+# view last commit details
+git log -n1
+
+# Diffs
+# diff between two commits
+git diff -u f19c b067
+
+# diff between staging area and working directory
+git diff
+
+# diff between staging area and repository
+git diff --staged
+
+# checkout a previous commit
+git checkout 3e42136a76cf78c6c421cd720427bf6337c2d623
+
+# checkout a particular branch
+git checkout master
+
+# create a new branch
+git branch new-branch
+git checkout new-branch
+
+# review all branches
+git branch
+
+# single step create and checkout new branch
+git checkout -b new-branch
+
+# delete a branch
+git branch -d new-branch
+
+# check status of repository
+git status
+
+# reset git
+git reset --hard
+
+# add new file or update existing file
+git add changed-file
+
+# commit
+git commit -m "my changes"
+
+# merge two branches
+# make sure to checkout the branch you want to merge into
+git checkout master
+git merge master my-branch
+
+#
+git show 3884eab
+
+#review the remotes
+git remote
+git remote -v
+
+# add a new remote
+git remote add origin https://github.com/dbhoite/reflections.git
+
+# push changes to remote
+git push origin master
+
+# pull changes from remote
+git pull origin master
+
+# create github free account
+# create repo
+# fork other repos
+# create a pull request
+# merge a pull request
